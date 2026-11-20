@@ -624,7 +624,13 @@ for key, meta in SURVEY_ITEMS.items():
     if meta.get("caveat"):
         print(f"  caveat: {meta['caveat']}")
 
-ccam_raw = load_ccam(CCAM_CSV)
+from importlib import reload
+import analysis.paths as _paths
+reload(_paths)
+from analysis.paths import CCAM_CSV
+
+ccam_raw = load_ccam()  # resolves inputs/ccam at call time
+print("CCAM_CSV =", CCAM_CSV)
 ccam = apply_recodes(ccam_raw)
 wave = wave_level_outcomes(ccam)
 print(f"Respondents: {len(ccam):,} | waves: {len(wave)}")

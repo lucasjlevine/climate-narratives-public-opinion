@@ -190,7 +190,15 @@ BINARY_OUTCOMES = {
 }
 
 
-def load_ccam(path=CCAM_CSV) -> pd.DataFrame:
+def load_ccam(path=None) -> pd.DataFrame:
+    """Load the CCAM respondent CSV.
+
+    Resolves the default path at *call* time so notebook kernels that imported
+    an older ``CCAM_CSV`` binding (e.g. pre-``inputs/`` move) still work when
+    called as ``load_ccam()``.
+    """
+    if path is None:
+        from analysis.paths import CCAM_CSV as path
     return pd.read_csv(path, low_memory=False)
 
 
