@@ -1,0 +1,33 @@
+{
+  "n_target": 200,
+  "n_drawn": 200,
+  "seed": 42,
+  "n_years": 18,
+  "base_per_year": 11,
+  "remainder_years": [
+    2024,
+    2025
+  ],
+  "n_outlets_in_sample": 108,
+  "year_allocation": {
+    "2008": 11,
+    "2009": 11,
+    "2010": 11,
+    "2011": 11,
+    "2012": 11,
+    "2013": 11,
+    "2014": 11,
+    "2015": 11,
+    "2016": 11,
+    "2017": 11,
+    "2018": 11,
+    "2019": 11,
+    "2020": 11,
+    "2021": 11,
+    "2022": 11,
+    "2023": 11,
+    "2024": 12,
+    "2025": 12
+  },
+  "sampling": "Year-stratified without replacement; within-year sampling probabilities proportional to 1/sqrt(outlet_count_in_year). Annotation fields exported empty."
+}

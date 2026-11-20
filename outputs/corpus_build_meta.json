@@ -1,0 +1,40 @@
+{
+  "diagnostics": {
+    "mediacloud_query": "\"climate change\" OR \"global warming\" OR \"climate disaster\" OR \"climate crisis\"",
+    "n_raw_rows": 1226664,
+    "n_duplicate_ids_removed": 0,
+    "duplicate_id_rate": 0.0,
+    "n_empty_or_invalid_title": 206,
+    "n_missing_date": 0,
+    "n_final": 1226458,
+    "n_outlets": 240,
+    "headline_token_mean": 10.398038905531212,
+    "headline_token_median": 10.0,
+    "missing_outlet_rate": 0.0,
+    "language_value_counts": {
+      "en": 1225526,
+      "es": 364,
+      "pt": 219,
+      "it": 102,
+      "fr": 97,
+      "la": 83,
+      "ja": 21,
+      "de": 13,
+      "id": 11,
+      "se": 6
+    }
+  },
+  "report": {
+    "n_raw_rows": 1226664,
+    "n_after_id_dedupe": 1226664,
+    "n_empty_or_invalid_title": 206,
+    "n_missing_date": 0,
+    "n_final": 1226458,
+    "n_outlets": 240,
+    "duplicate_id_rate": 0.0,
+    "year_min": 2008,
+    "year_max": 2025
+  },
+  "n_fixed_panel_outlets": 78,
+  "elapsed_sec": 73.6
+}
